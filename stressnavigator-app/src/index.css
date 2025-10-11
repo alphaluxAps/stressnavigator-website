@@ -1,0 +1,23 @@
+/* Import Google Fonts: Cabin for headlines, Chivo for body */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Chivo:wght@400;700&display=swap');
+
+/* Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* Global resets and adjustments */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Chivo', sans-serif; /* Default body font */
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

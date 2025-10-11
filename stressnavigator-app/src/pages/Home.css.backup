@@ -1,0 +1,589 @@
+/* Hero Section */
+.hero-section {
+  background-image: url('/assets/images/hero-beach-background.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 80px 40px;
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(146, 132, 164, 0.82);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  font-family: 'Cabin', sans-serif;
+}
+
+.hero-subtitle {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 1.5rem 0 2.5rem;
+  line-height: 1.6;
+  font-family: 'Chivo', sans-serif;
+}
+
+.hero-cta-button {
+  display: inline-block;
+  padding: 14px 30px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background: transparent;
+  border-radius: 0;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.hero-cta-button:hover {
+  background-color: #ffffff;
+  color: #9284a4;
+}
+
+/* Testimonials Section 1 */
+.testimonials-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #595959;
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-family: 'Chivo', sans-serif;
+}
+
+.testimonial-author {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+}
+
+/* About Network Section */
+.about-network-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+
+.about-network-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-network-image {
+  flex: 1;
+}
+
+.about-network-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-network-text {
+  flex: 1.5;
+}
+
+.about-network-text h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-family: 'Chivo', sans-serif;
+}
+
+.about-network-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #595959;
+  margin-bottom: 1.5rem;
+  font-family: 'Cabin', sans-serif;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.benefits-list li {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  color: #595959;
+  line-height: 1.6;
+}
+
+.benefits-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #9284a4;
+  font-weight: bold;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #9284a4;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #7a6b8a;
+}
+
+/* Isabella Section */
+.isabella-section {
+  background-color: #f7f7f8;
+  padding: 80px 20px;
+}
+
+.isabella-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.isabella-text {
+  flex: 1;
+}
+
+.isabella-text h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-family: 'Chivo', sans-serif;
+}
+
+.isabella-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #595959;
+  margin-bottom: 1.5rem;
+  font-family: 'Cabin', sans-serif;
+}
+
+.isabella-text a {
+  color: #9284a4;
+  text-decoration: underline;
+}
+
+.isabella-video {
+  flex: 1;
+}
+
+.video-placeholder {
+  background-color: #e0e0e0;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Testimonials Section 2 */
+.testimonials-section-2 {
+  background-color: #f0f0f5;
+  padding: 80px 20px;
+}
+
+.testimonials-section-2 h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+  font-family: 'Chivo', sans-serif;
+}
+
+.testimonials-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card-2 {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.testimonial-card-2 .testimonial-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #595959;
+  margin-bottom: 1.5rem;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-family: 'Chivo', sans-serif;
+}
+
+.features-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #595959;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  font-family: 'Cabin', sans-serif;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-family: 'Chivo', sans-serif;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #595959;
+  font-family: 'Cabin', sans-serif;
+}
+
+.features-footer {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #595959;
+  max-width: 900px;
+  margin: 2rem auto 0;
+  font-family: 'Cabin', sans-serif;
+}
+
+/* Pricing Section */
+.pricing-section {
+  background-color: #f0f0f5;
+  padding: 80px 20px;
+}
+
+.pricing-card {
+  background-color: #ffffff;
+  padding: 60px 40px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing-card h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-family: 'Chivo', sans-serif;
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  color: #9284a4;
+  margin-bottom: 1rem;
+  font-family: 'Cabin', sans-serif;
+}
+
+.price-note {
+  color: #666;
+  margin-bottom: 2rem;
+  font-family: 'Cabin', sans-serif;
+}
+
+.pricing-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.pricing-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-column li {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  color: #595959;
+  line-height: 1.6;
+}
+
+.pricing-column li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #9284a4;
+  font-weight: bold;
+}
+
+.guarantee {
+  margin: 2rem 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.guarantee small {
+  display: block;
+  font-weight: normal;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.pricing-cta-button {
+  display: inline-block;
+  padding: 16px 40px;
+  background-color: #9284a4;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.pricing-cta-button:hover {
+  background-color: #7a6b8a;
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-family: 'Chivo', sans-serif;
+}
+
+.faq-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #595959;
+  margin-bottom: 3rem;
+  font-family: 'Cabin', sans-serif;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+}
+
+.faq-item {
+  padding: 20px;
+}
+
+.faq-item h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-family: 'Chivo', sans-serif;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #595959;
+  font-family: 'Cabin', sans-serif;
+}
+
+.faq-cta {
+  background-color: #f7f7f8;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 800px;
+  margin: 3rem auto 0;
+}
+
+.faq-cta h3 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-family: 'Chivo', sans-serif;
+}
+
+.faq-cta p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #595959;
+  margin-bottom: 1.5rem;
+  font-family: 'Cabin', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .hero-section {
+    padding: 60px 20px;
+    min-height: 400px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-cta-button {
+    font-size: 0.95rem;
+    padding: 12px 24px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .testimonials-section {
+    padding: 40px 20px;
+  }
+
+  .about-network-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .isabella-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .testimonials-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-features {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-network-text h2,
+  .isabella-text h2,
+  .features-section h2,
+  .pricing-card h2,
+  .faq-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
