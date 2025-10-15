@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Network from './pages/Network';
 import About from './pages/About';
@@ -11,6 +12,7 @@ import Terms from './pages/Terms';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,6 +22,7 @@ function App() {
           <Route path="/presse" element={<Press />} />
           <Route path="/cookie-og-privatlivspolitik" element={<Privacy />} />
           <Route path="/handels-og-abonnementsbetingelser" element={<Terms />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>
     </Router>

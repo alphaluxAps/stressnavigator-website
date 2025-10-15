@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MEWATEC Ohio O800 – Quickguide (Udvidet)</title>
+<style>
+  /* Print setup */
+  @page { size: A4; margin: 14mm; }
+  html, body { height: 100%; }
+  body { margin: 30px; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color:#111; }
+  .page { page-break-after: always; padding: 0; }
+  .page:last-child { page-break-after: auto; }
+
+  h1 { font: 700 18pt/1.2 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color:#23424A;
+       border-bottom: 3px solid #5DAFB8; margin: 0 0 8mm; padding-bottom: 3mm; }
+  h2 { font: 700 13.5pt/1.2 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color:#2d9ab3; margin: 0 0 4mm; }
+  p, li { font-size: 10.8pt; line-height: 1.35; }
+  .grid { display:grid; grid-template-columns: 62mm 1fr; gap: 8mm; align-items:start; }
+  .remote { width:62mm; }
+  .card { background:#fff; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border:1px solid #e5e7eb; padding: 1.5mm 1mm; vertical-align: top; font-size: 10.2pt; }
+  th { background:#5DAFB8; color:#fff; text-align:left; }
+  .soft { background:#EEF7F8; border:1px solid #d7edf0; padding: 4mm; border-radius: 6px; }
+  .muted { color:#475569; }
+  .section { margin: 0 0 6mm; }
+  .bullet { margin: 0; padding-left: 5mm; }
+  .legend { display:grid; grid-template-columns: 1fr 1fr; gap: 2mm 6mm; font-size:10.2pt; margin-bottom: 3mm; }
+  .legend div { display:flex; align-items:center; gap:4mm; }
+  .i { width:24px; height:24px; vertical-align: -3px; }
+  .i-lg { width:18px; height:18px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+
+<!-- Inline SVG sprite (vector icons—prints perfectly) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+  <symbol id="ic-child" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+    <circle cx="12" cy="12" r="9"/>
+    <circle cx="9" cy="11" r="1"/>
+    <circle cx="15" cy="11" r="1"/>
+    <path d="M8 15c1.2 1 2.6 1.5 4 1.5s2.8-.5 4-1.5"/>
+  </symbol>
+
+  <symbol id="ic-enema" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="6" r="2"/>
+    <path d="M12 8v7"/>
+    <path d="M6 18c3-5 9-5 12 0"/>
+  </symbol>
+
+
+  <symbol id="ic-user" viewBox="0 0 24 24" fill="currentColor">
+    <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6z"/>
+  </symbol>
+  <symbol id="ic-anal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+    <path d="M5 16c4-6 10-6 14 0"/><path d="M8 11h.01M12 10h.01M16 11h.01"/>
+    <path d="M12 19v-5"/>
+  </symbol>
+  <symbol id="ic-fem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+    <circle cx="12" cy="7" r="4"/><path d="M12 11v4M9 15h6"/>
+  </symbol>
+  <symbol id="ic-stop" viewBox="0 0 24 24" fill="currentColor"><rect x="7" y="7" width="10" height="10" rx="2"/></symbol>
+  <symbol id="ic-enema" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M6 17c3-5 9-5 12 0"/><path d="M12 6v8"/><circle cx="12" cy="5" r="2"/>
+  </symbol>
+  <symbol id="ic-fan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+    <circle cx="12" cy="12" r="2"/><path d="M12 4c3 0 6 2 6 4-2 1-4 1-6 0 2-1 0-4 0-4zM12 20c-3 0-6-2-6-4 2-1 4-1 6 0-2 1 0 4 0 4zM4 12c0-3 2-6 4-6 1 2 1 4 0 6-1-2-4 0-4 0zM20 12c0 3-2 6-4 6-1-2-1-4 0-6 1 2 4 0 4 0z"/>
+  </symbol>
+  <symbol id="ic-water" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M12 3s6 6 6 10a6 6 0 1 1-12 0c0-4 6-10 6-10z"/>
+  </symbol>
+  <symbol id="ic-seat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M7 20h10M8 4h8l2 8H6z"/>
+  </symbol>
+  <symbol id="ic-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M3 12h5l2-4 4 8 2-4h5"/>
+  </symbol>
+  <symbol id="ic-clean" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M6 18l12-12M9 18h6"/><circle cx="12" cy="6" r="2"/>
+  </symbol>
+  <symbol id="ic-energy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M13 2L4 14h7l-1 8 9-12h-7z"/>
+  </symbol>
+  <symbol id="ic-osc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M3 12h6M15 12h6"/><path d="M9 8l6 4-6 4z"/>
+  </symbol>
+  <symbol id="ic-pos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M7 12h10"/><path d="M10 9l-3 3 3 3"/>
+  </symbol>
+  <symbol id="ic-press" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M7 17c4-6 6-6 10 0"/><path d="M12 7v6"/>
+  </symbol>
+</svg>
+
+<!-- PAGE 1 -->
+<div class="page">
+  <h1>MEWATEC Ohio O800 – Quickguide (Udvidet)</h1>
+  <div class="grid">
+    <div class="card">
+      <img class="remote" alt="FB1 fjernbetjening" src="img.png">
+    </div>
+    <div class="card">
+      <div class="section">
+        <h2>👤 Brugerprofiler</h2>
+        <p>Der er to brugerprofiler (<b>1</b> og <b>2</b>), så hver bruger kan gemme sine personlige indstillinger.
+        <b>Vælg</b> profil med et kort tryk <em>før</em> skylning. Efter vask – når tryk, dyseposition og temperatur er justeret –
+        <b>hold profilknappen nede i ~3 sek.</b> for at gemme. Et kort bip bekræfter.</p>
+      </div>
+
+      <div class="section">
+        <h2>🧭 Sådan starter du en vask</h2>
+        <ol class="bullet">
+          <li>Sæt dig på sædet (sensor aktiveres).</li>
+          <li>Vælg profil <b>1</b> eller <b>2</b>.</li>
+          <li>Tryk <img src="img/anal.png" class="i" alt="Analvask icon"> Anal eller <img src="img/lady.png" class="i" alt="Damevask icon"> Dame.</li>
+          <li>Tryk igen for <b>oscillation</b> (frem/tilbage).</li>
+          <li>Hold knappen ~3 sek. for <b>Booster</b>.</li>
+        </ol>
+        <p class="muted">Under vask kan du justere dyseposition (<img src="img/position.png" class="i" alt="Dyseposition icon">), vandtryk (<img src="img/tryk.png" class="i" alt="Vandtryk icon">),
+        vandtemperatur (<img src="img/vand.png" class="i" alt="Vandtemperatur icon">) og sædevarme (<img src="img/saedevarme.png" class="i" alt="Sædevarme icon">).</p>
+      </div>
+
+      <div class="section">
+        <h2>🔧 Hovedfunktioner</h2>
+        <table>
+          <tr><th>Funktion</th><th>Kort brug</th></tr>
+          <tr><td><img src="img/anal.png" class="i" alt="Analvask icon"> Analvask</td><td>1× Start · 2× Oscillation · Hold 3 sek = Booster</td></tr>
+          <tr><td><img src="img/lady.png" class="i" alt="Damevask icon"> Damevask</td><td>Mildere skyl; samme betjening som ovenfor</td></tr>
+          <tr>
+            <td><img src="img/enema.png" class="i" alt="Enema icon"> Indløb (Enema)</td>
+            <td>Fokuseret stråle · start/stop · valgfri oscillation</td>
+          </tr>
+          <tr>
+            <td><img src="img/kids.png" class="i"/></svg> Børnetilstand</td>
+            <td>Skånsomt program med reduceret temp./tryk</td>
+          </tr>
+          <tr><td><img src="img/stop.png" class="i"/></svg> Stop</td><td>Afbryder alle funktioner (sædevarme forbliver)</td></tr>
+
+          <tr><td><img src="img/vand.png" class="i" alt="Vandtemperatur icon"> Vandtemperatur</td><td>4 trin + slukket</td></tr>
+          <tr><td><img src="img/saedevarme.png" class="i" alt="Sædevarme icon"> Sædevarme</td><td>34° / 37° / 40° + slukket</td></tr>
+          <tr><td><img src="img/blower.png" class="i" alt="Tørrer icon"> Tørrer (O800)</td><td>Start/stop; 5 temperaturtrin; ca. 3 min.</td></tr>
+          <tr><td><img src="img/clean.png" class="i" alt="Clean icon"> Dyserens</td><td>Auto før/efter · Hold ~3 sek. for varm hygiejneskyl</td></tr>
+          <tr><td><img src="img/energy.png" class="i">  Energispare</td><td>1× Auto · 2× Udvidet · hold 3 sek = Standby</td></tr>
+
+        </table>
+      </div>
+
+      <div class="section soft">
+        <strong>Tips</strong>
+        <ul class="bullet">
+          <li>Skylningen stopper automatisk efter ~2 minutter</li>
+          <li>Tryk <img src="img/stop.png" class="i"/> for straks stop</li>
+          <li>Dyseposition og tryk gemmes pr. profil</li>
+          <li>Automatisk dyserens før og efter hver brug</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <h1>MEWATEC Ohio O800 – Udvidet brug</h1>
+  <div class="grid">
+    <div class="card" style="grid-column: 1 / -1;">
+      <h2>⚙️ Energisparetilstande</h2>
+      <table>
+        <tr><th>Tilstand</th><th>Aktivering</th><th>Hvad sker der</th></tr>
+        <tr><td>Auto</td><td>Energispar 1×</td><td>Sædevarme sænkes når tomt; hæves ved brug</td></tr>
+        <tr><td>Udvidet</td><td>Energispar 2×</td><td>Sædevarme slukker; natlys dæmpes</td></tr>
+        <tr><td>Standby</td><td>Hold ~3 sek</td><td>Næsten fuld hvile (LED slukket); tryk igen for at vække</td></tr>
+      </table>
+    </div>
+
+    <div class="card" style="grid-column: 1 / -1;">
+      <h2>📟 Sidebetjening (iBidet Field)</h2>
+      <table>
+        <tr><th>Gestus</th><th>Funktion</th></tr>
+        <tr><td>Stryg frem</td><td>Damevask</td></tr>
+        <tr><td>Stryg tilbage</td><td>Analvask</td></tr>
+        <tr><td>Tryk i midten</td><td>Stop</td></tr>
+        <tr><td>Stryg samme vej igen</td><td>Svingende bevægelse</td></tr>
+        <tr><td>Stop 4× (ubesat)</td><td>Fabriksnulstilling</td></tr>
+      </table>
+    </div>
+
+    <div class="card" style="grid-column: 1 / -1;">
+      <h2>🧽 Rengøring & Vedligehold</h2>
+      <ul class="bullet">
+        <li><b>Hygiejneskyl:</b> Hold <img src="img/clean.png" class="i" alt="Clean icon"> i ~3 sek. – varmt skyl (45 sek), dyse ude i ~5 min (kan børstes), tryk igen for at køre ind</li>
+        <li><b>Finfilter:</b> Skyl ved mærkbart fald i flow</li>
+        <li><b>Kalkfilter (MF100):</b> Udskift typisk hver 3. måned (hurtigere ved hårdt vand)</li>
+      </ul>
+    </div>
+
+    <div class="card" style="grid-column: 1 / -1;">
+      <h2>🔧 Fejlfinding</h2>
+      <table>
+        <tr><th>Symptom</th><th>Løsning</th></tr>
+        <tr><td>Svag stråle / stopper</td><td>Rens finfilter · Udskift kalkfilter · Ret knæk på slange · Kontroller vandtryk (~0,7–7,1 bar)</td></tr>
+        <tr><td>Ingen varme</td><td>Tjek temperatur og energispare-tilstand</td></tr>
+        <tr><td>Ingen respons</td><td>Tjek strøm, batterier eller parring af fjernbetjening</td></tr>
+        <tr><td>Stopper tidligt</td><td>Normal funktion – automatisk stop efter ~2 min</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
