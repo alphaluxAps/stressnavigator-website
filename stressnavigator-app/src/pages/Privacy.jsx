@@ -146,7 +146,7 @@ const Privacy = () => {
               <li><strong>Nødvendige cookies:</strong> Calendly, Cloudflare, CookieYes, reCAPTCHA, PayPal, Stripe</li>
               <li><strong>Analyse cookies:</strong> Google Analytics, Facebook</li>
               <li><strong>Annoncerings cookies:</strong> RudderStack</li>
-              <li><strong>Ukategoriserede cookies:</strong> AWS, Kajabi, m.fl.</li>
+              <li><strong>Ukategoriserede cookies:</strong> AWS, m.fl.</li>
             </ul>
 
             {/* Cookie Tables */}
@@ -259,11 +259,6 @@ const Privacy = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2">kajabi_session</td>
-                      <td className="border border-gray-300 px-4 py-2">session</td>
-                      <td className="border border-gray-300 px-4 py-2">Bruges af Kajabi platform til at huske brugerens session.</td>
-                    </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-2">aws-waf</td>
                       <td className="border border-gray-300 px-4 py-2">session</td>

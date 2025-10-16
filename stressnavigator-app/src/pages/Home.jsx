@@ -48,7 +48,7 @@ const Home = () => {
           <h4 className="text-white text-2xl max-md:text-[1.1rem] font-bold my-6 max-md:my-6 leading-[1.6] font-chivo">
             Stress Navigator er online-netværket, der giver stressede mødre overskud til det, der betyder mest
           </h4>
-          <a href="#pricing" className="inline-block py-[14px] px-[30px] max-md:py-3 max-md:px-6 text-white border-2 border-white bg-transparent rounded-none no-underline text-lg max-md:text-[0.95rem] font-bold transition-all duration-300 ease-in-out mt-4 hover:bg-white hover:text-[#9284a4]" role="button">
+          <a href="/om-netvaerket#bedste-metoder" className="inline-block py-[14px] px-[30px] max-md:py-3 max-md:px-6 text-white border-2 border-white bg-transparent rounded-none no-underline text-lg max-md:text-[0.95rem] font-bold transition-all duration-300 ease-in-out mt-4 hover:bg-white hover:text-[#9284a4]" role="button">
             Få e-bogen med mine bedste metoder til at få overskuddet tilbage
           </a>
         </div>
@@ -66,7 +66,7 @@ const Home = () => {
             </div>
             <div className="p-5 text-center">
               <p className="text-lg leading-[1.6] text-[#595959] mb-4 italic font-chivo">
-                "Netværket giver et kærligt puf og rummer mig selvom jeg er presset. Det er et sted, hvor jeg kan være uden krav eller forventninger, og hvor empati erstatter den kvalende sympati, jeg nogle gange oplever fra mit eget netværk."
+                "Netværket giver et kærligt puf og rummer mig selvom jeg er presset. Det er et sted, hvor jeg kan være uden krav eller forventninger, og hvor empati erstatter den kvælende sympati, jeg nogle gange oplever fra mit eget netværk."
               </p>
               <p className="text-2xl font-bold text-[#333] m-0 font-cabin">Ellen, sygeplejerske</p>
             </div>
@@ -203,7 +203,7 @@ const Home = () => {
       </section>
 
       {/* Membership Features Section */}
-      <section className="bg-white py-20 px-5">
+      <section id="hvad-far-du-som-medlem" className="bg-white py-20 px-5">
         <div className="max-w-[1200px] mx-auto px-5">
           <h2 className="text-center text-5xl max-md:text-4xl text-[#333] mb-6 font-cabin">Hvad får du som medlem?</h2>
           <p className="text-center text-lg leading-[1.7] text-[#595959] max-w-[900px] mx-auto mb-12 font-chivo">
@@ -269,7 +269,7 @@ const Home = () => {
               <small className="block font-normal text-[#666] mt-2">(Betalingen trækkes først efter 14 dage. Hvis du ikke oplever værdi, annullerer du nemt uden omkostning)</small>
             </p>
 
-            <a href="#signup" className="inline-block py-4 px-10 bg-[#9284a4] text-white no-underline rounded text-lg font-bold transition-all duration-300 ease-in-out mt-4 hover:bg-[#7a6b8a]">Tilmeld dig i dag</a>
+            <a href="/kontakt#contact-form" className="inline-block py-4 px-10 bg-[#9284a4] text-white no-underline rounded text-lg font-bold transition-all duration-300 ease-in-out mt-4 hover:bg-[#7a6b8a]">Tilmeld dig i dag</a>
           </div>
         </div>
       </section>
@@ -305,7 +305,7 @@ const Home = () => {
           <div className="bg-[#f7f7f8] p-10 rounded-lg text-center max-w-[800px] mx-auto mt-12">
             <h3 className="text-2xl font-bold text-[#333] mb-4 font-cabin">Er du stadig i tvivl? Book en uforpligtende samtale</h3>
             <p className="text-lg leading-[1.7] text-[#595959] mb-6 font-chivo">Drømmer du om en hverdag med mere overskud og ro, men er du i tvivl om, om Stress Navigator er noget for dig? Book en uforpligtende samtale på 20 minutter med mig, hvor vi sammen gennemgår din situation. Uanset om vi er et match eller ej, garanterer jeg dig brugbare råd, som du frit kan tage med dig efter samtalen.</p>
-            <a href="https://calendly.com/stressnavigator/20min" target="_blank" rel="noopener noreferrer" className="inline-block py-3 px-7 bg-[#9284a4] text-white no-underline rounded text-lg font-bold transition-all duration-300 ease-in-out mt-4 hover:bg-[#7a6b8a]">Book din uforpligtende samtale</a>
+            <a href="/kontakt#contact-form" className="inline-block py-3 px-7 bg-[#9284a4] text-white no-underline rounded text-lg font-bold transition-all duration-300 ease-in-out mt-4 hover:bg-[#7a6b8a]">Book din uforpligtende samtale</a>
           </div>
         </div>
       </section>

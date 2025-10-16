@@ -53,7 +53,7 @@ const Terms = () => {
               Betaling sker via faktura eller kort (Visa, Dankort, American Express, Mastercard). Betaling trækkes umiddelbart ved køb. Faktura sendes via email.
             </p>
             <p className="text-[18px] leading-[1.6] text-gray-700 mb-8">
-              Betalingen behandles gennem Kajabi abonnementssystem og Stripe betalingsgateway.
+              Betalingen behandles gennem Stripe betalingsgateway.
             </p>
 
             <h3 className="text-[24px] leading-[1.2] font-bold font-chivo text-gray-800 mt-8 mb-4">
@@ -128,9 +128,7 @@ const Terms = () => {
             Få mine bedste metoder.
           </h4>
           <a
-            href="https://calendly.com/stressnavigator/20min"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/kontakt#contact-form"
             className="inline-block bg-primary text-white px-8 py-3 rounded text-[18px] font-bold leading-normal hover:bg-primary-dark transition"
           >
             Book en uforpligtende samtale

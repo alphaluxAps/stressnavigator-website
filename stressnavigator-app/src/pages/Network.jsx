@@ -1,4 +1,59 @@
+import { useState } from 'react';
+
 const Network = () => {
+  const [ebookFormData, setEbookFormData] = useState({
+    name: '',
+    email: '',
+    message: 'Vil gerne have e-bog'
+  });
+
+  const handleEbookSubmit = (e) => {
+    e.preventDefault();
+
+    // Set up test data with henrik@liljegren.eu for testing
+    const testData = {
+      ...ebookFormData,
+      email: 'henrik@liljegren.eu' // Override with test email for this submission
+    };
+
+    console.log('Ebook form submitted:', testData);
+
+    // Formspree endpoint
+    const formspreeEndpoint = 'https://formspree.io/f/mldppkea';
+
+    // Submit the form to Formspree
+    fetch(formspreeEndpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(testData),
+    })
+      .then(response => {
+        if (response.ok) {
+          alert('Tak! Din e-bog er på vej. Tjek din email.');
+          // Reset form after successful submission
+          setEbookFormData({
+            name: '',
+            email: ''
+          });
+        } else {
+          alert('Der opstod en fejl ved afsendelse af formularen. Prøv igen senere.');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Der opstod en fejl ved afsendelse af formularen. Prøv igen senere.');
+      });
+  };
+
+  const handleEbookChange = (e) => {
+    setEbookFormData({
+      ...ebookFormData,
+      [e.target.name]: e.target.value
+    });
+  };
+
   return (
     <div>
       {/* Hero Section */}
@@ -11,7 +66,7 @@ const Network = () => {
             Genfind glæden og friheden i hverdagen med et netværk af andre mødre<br/>
             og få det liv, du drømmer om.
           </p>
-          <a href="#pricing" className="inline-block py-[14px] px-[30px] bg-[#9284a4] text-white no-underline rounded font-bold text-lg mt-4 font-chivo transition-all duration-300 ease-in-out hover:bg-[#7a6b8a]">Ja tak - giv mig glæden og friheden tilbage</a>
+          <a href="/kontakt#contact-form" className="inline-block py-[14px] px-[30px] bg-[#9284a4] text-white no-underline rounded font-bold text-lg mt-4 font-chivo transition-all duration-300 ease-in-out hover:bg-[#7a6b8a]">Ja tak - giv mig glæden og friheden tilbage</a>
         </div>
       </section>
 
@@ -89,7 +144,7 @@ const Network = () => {
           </div>
           <div className="text-center mt-12 max-w-[900px] mx-auto">
             <p className="text-lg leading-[1.7] text-[#595959] mb-6 font-chivo">Hvis du kan nikke genkendende til et par af disse punkter, så book en tid i min kalender til en uforpligtende samtale. Så kan du høre mere om, hvordan netværket og jeg vil kunne hjælpe dig tilbage til en hverdag, hvor du har overskud til det der betyder mest.</p>
-            <a href="https://calendly.com/stressnavigator/20min" target="_blank" rel="noopener noreferrer" className="inline-block py-[14px] px-[30px] bg-[#9284a4] text-white no-underline rounded font-bold text-lg mt-4 font-chivo transition-all duration-300 ease-in-out hover:bg-[#7a6b8a]">Book en uforpligtende samtale</a>
+            <a href="/kontakt#contact-form" className="inline-block py-[14px] px-[30px] bg-[#9284a4] text-white no-underline rounded font-bold text-lg mt-4 font-chivo transition-all duration-300 ease-in-out hover:bg-[#7a6b8a]">Book en uforpligtende samtale</a>
           </div>
         </div>
       </section>
@@ -161,7 +216,7 @@ const Network = () => {
               <li className="pl-6 mb-4 relative text-[#595959] leading-[1.6] font-chivo text-lg before:content-['✓'] before:absolute before:left-0 before:text-[#9284a4] before:font-bold">Støtte fra netværket</li>
             </ul>
 
-            <a href="#signup" className="inline-block py-[14px] px-[30px] bg-[#9284a4] text-white no-underline rounded font-bold text-lg mt-4 font-chivo transition-all duration-300 ease-in-out hover:bg-[#7a6b8a]">Før mig videre til tilmelding</a>
+            <a href="/kontakt#contact-form" className="inline-block py-[14px] px-[30px] bg-[#9284a4] text-white no-underline rounded font-bold text-lg mt-4 font-chivo transition-all duration-300 ease-in-out hover:bg-[#7a6b8a]">Før mig videre til tilmelding</a>
           </div>
         </div>
       </section>
@@ -333,13 +388,13 @@ const Network = () => {
           <div className="text-center max-w-[900px] mx-auto bg-[#f7f7f8] py-[40px] px-5 md:py-[60px] md:px-10 rounded-lg">
             <h2 className="text-[2rem] md:text-5xl text-[#333] mb-6 font-cabin">Er du i tvivl om et medlemskab er noget for dig?</h2>
             <p className="text-lg leading-[1.7] text-[#595959] mb-8 font-chivo">Herunder kan du få svar på nogle af de spørgsmål vi oftest bliver stillet. Men du kan også booke et uforpligtende afklaringssamtale med mig.</p>
-            <a href="https://calendly.com/stressnavigator/20min" target="_blank" rel="noopener noreferrer" className="inline-block py-[14px] px-[30px] bg-[#9284a4] text-white no-underline rounded font-bold text-lg mt-4 font-chivo transition-all duration-300 ease-in-out hover:bg-[#7a6b8a]">Book en uforpligtende samtale</a>
+            <a href="/kontakt#contact-form" className="inline-block py-[14px] px-[30px] bg-[#9284a4] text-white no-underline rounded font-bold text-lg mt-4 font-chivo transition-all duration-300 ease-in-out hover:bg-[#7a6b8a]">Book en uforpligtende samtale</a>
           </div>
         </div>
       </section>
 
       {/* E-book Section */}
-      <section className="bg-[#f7f7f8] py-20 px-5">
+      <section id="bedste-metoder" className="bg-[#f7f7f8] py-20 px-5">
         <div className="max-w-[1200px] mx-auto px-5">
           <div className="flex flex-col md:flex-row items-center gap-[30px] md:gap-[60px] max-w-[1200px] mx-auto">
             <div className="flex-1">
@@ -357,9 +412,25 @@ const Network = () => {
               <p className="text-[0.9rem] text-[#777] italic">
                 Når du skriver dig op til dig, accepterer du samtidigt at modtage miniguides, som jævnligt bliver sendt ud. Du kan til enhver til afmelde dig med et enkelt klik.
               </p>
-              <form className="flex flex-col gap-[15px] mt-8">
-                <input type="text" placeholder="Navn" required className="py-3 px-[15px] border border-[#ddd] rounded text-lg font-chivo" />
-                <input type="email" placeholder="Email" required className="py-3 px-[15px] border border-[#ddd] rounded text-lg font-chivo" />
+              <form onSubmit={handleEbookSubmit} className="flex flex-col gap-[15px] mt-8">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Navn"
+                  value={ebookFormData.name}
+                  onChange={handleEbookChange}
+                  required
+                  className="py-3 px-[15px] border border-[#ddd] rounded text-lg font-chivo"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={ebookFormData.email}
+                  onChange={handleEbookChange}
+                  required
+                  className="py-3 px-[15px] border border-[#ddd] rounded text-lg font-chivo"
+                />
                 <button type="submit" className="inline-block py-[14px] px-[30px] bg-[#9284a4] text-white no-underline rounded font-bold text-lg mt-4 font-chivo transition-all duration-300 ease-in-out hover:bg-[#7a6b8a] border-none cursor-pointer">Download e-bog</button>
               </form>
             </div>
@@ -373,7 +444,7 @@ const Network = () => {
           <div className="text-center max-w-[900px] mx-auto">
             <h2 className="text-[2rem] md:text-5xl text-[#333] mb-6 font-cabin">Vi glæder os til at møde dig.</h2>
             <p className="text-lg leading-[1.7] text-[#595959] mb-8 font-chivo">Tilmeld dig her og kom i gang med forandringen med det samme.</p>
-            <a href="#signup" className="inline-block py-[18px] px-10 bg-[#9284a4] text-white no-underline rounded font-bold text-lg mt-4 font-chivo transition-all duration-300 ease-in-out hover:bg-[#7a6b8a]">Ja tak. Jeg vil gerne være medlem.</a>
+            <a href="/kontakt#contact-form" className="inline-block py-[18px] px-10 bg-[#9284a4] text-white no-underline rounded font-bold text-lg mt-4 font-chivo transition-all duration-300 ease-in-out hover:bg-[#7a6b8a]">Ja tak. Jeg vil gerne være medlem.</a>
           </div>
         </div>
       </section>

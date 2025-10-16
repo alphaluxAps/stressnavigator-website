@@ -79,9 +79,7 @@ const Press = () => {
             Få mine bedste metoder.
           </h4>
           <a
-            href="https://calendly.com/stressnavigator/20min"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/kontakt#contact-form"
             className="inline-block bg-primary text-white px-8 py-3 rounded text-[18px] font-bold hover:bg-primary-dark transition leading-normal"
           >
             Book en uforpligtende samtale
